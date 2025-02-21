@@ -25,8 +25,11 @@ echo ${array_var[@]}
 echo ${#array_var[*]}
 ```
 
-- 关联数组
+关联数组
+
 声明
+- echo ${!ass_array[*]} 获取关联数组的键
+- echo ${!ass_array[@]} 获取关联数组的键
 ```shell
 declare -A ass_array
 ass_array={[index1]=val1 [index2]=val2}

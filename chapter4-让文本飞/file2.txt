@@ -1,0 +1,9 @@
+linux
+gun
+bash
+hack
+cat<<EOF > file2.txt
+linux
+gun
+bash
+hack

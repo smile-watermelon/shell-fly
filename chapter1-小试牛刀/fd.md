@@ -40,6 +40,10 @@ EOF
 - < 从文件中读取到stdin,> 截断模式的文件写入
 
 创建一个文件描述符进行读取，使用exec
+
+exec 命令用于在当前 Shell 进程中执行指定的命令，执行后会替换当前 Shell 进程，不会创建子 Shell。
+一旦执行 exec 命令，当前 Shell 的后续命令将不会再执行。
+
 - exec 3<input.txt
 ```shell
 echo this is a test line > input.txt

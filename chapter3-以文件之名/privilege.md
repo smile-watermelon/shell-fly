@@ -137,13 +137,21 @@ diff -Naur dir1 dir2
 ```shell
 head -n 3 a.txt
 ```
+
+打印除了最后两行的其他所有行
+```shell
+head -n -2 a.txt
+```
+
 ```shell
 tail -n 3 a.txt
 ```
+
 打印前N行之外的行
 ```shell
 tail -n +3 a.txt
 ```
+
 ```shell
 PID=$(pidof FOO)
 tail -f file --pid $PID
@@ -153,12 +161,15 @@ tail -f file --pid $PID
 ```shell
 ls -d */
 ```
+
 ```shell
 ls -F | grep "/$"
 ```
+
 ```shell
 ls -l | grep '^d'
 ```
+
 ```shell
 find . -type d -maxdepth 1 -print
 ```
